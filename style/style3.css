@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+html {
+    font-size: 62.5%; /* Makes 1rem = 10px for easier calculations */
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('/images/stack.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.5rem 10%; /* Larger padding for header */
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 3rem; /* Increased size for logo */
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+  }
+  
+  .navbar a {
+    font-size: 2rem; /* Increased font size for navigation */
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 3rem; /* Slightly larger spacing */
+    transition: 0.3s;
+  }
+  
+  .navbar a.active {
+    color: white;
+  }
+  
+  .navbar a:hover {
+    color: #00abf0;
+  }
+
+.container {
+    width: 500px; /* Set width and height to the same value to make the container square */
+    height: 500px;
+    margin-top: 280px; /* Adjust to position below the header */
+    background-color:rgba(67, 65, 65, 0.503);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.4rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #00abf0;
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: #081b29; /* Dark background color */
+    color: #fff; /* White text */
+    font-size:medium;
+    text-align: center; /* Center-align text */
+    padding: 2rem 0;
+    width: 100%; /* Ensure it takes full width */
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
+  footer p {
+    margin: 0;
+  }
